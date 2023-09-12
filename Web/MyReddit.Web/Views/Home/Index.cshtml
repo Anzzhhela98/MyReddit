@@ -1646,10 +1646,11 @@
                     <div class="categori-part329">
                         <h4>Category</h4>
                         <ul>
-                            <li><a href="#">web developer</a></li>
-                            <li><a href="#">Andriod developer</a></li>
-                            <li><a href="#">grapics developer</a></li>
-                            <li><a href="#">web developer</a></li>
+                            @foreach (var category in Model.Categories)
+                            {
+
+                                <li><a href="#">@category.Title</a></li>
+                            }
                         </ul>
                     </div>
                     <!--             social part -->
